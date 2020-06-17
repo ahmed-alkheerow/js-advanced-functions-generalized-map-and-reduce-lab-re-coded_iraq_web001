@@ -8,8 +8,8 @@ function map (array, callbackFn){
 }
 
 function reduce(array , callbackFn  , startingPoint=0){
-  let acc=0;
-  for (let i = startingPoint; i < array.length; i++) {
+  let acc=startingPoint;
+  for (let i = 0; i < array.length; i++) {
   acc = callbackFn(acc,  array[i]);
   }
 return acc;
