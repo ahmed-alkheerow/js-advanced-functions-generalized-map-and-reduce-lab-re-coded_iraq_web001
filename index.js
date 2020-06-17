@@ -6,3 +6,11 @@ function map (array, callbackFn){
   }
   return newArry;
 }
+
+function reduce(array , callbackFn  , startingPoint=0){
+  let acc=0;
+  for (var i = startingPoint; i < array.length; i++) {
+  callbackFn(acc,  array[i])
+  }
+return acc;
+}
